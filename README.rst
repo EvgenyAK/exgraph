@@ -6,11 +6,11 @@ ExGraph
 =========
 
 .. code-block:: python
+
     import exgraph
 
-
-    yaml = """
-    my_bin:
+    graph = """
+    MY_BIN:
         type: process
 
         on_start: on_start.sh
@@ -47,4 +47,4 @@ ExGraph
             $MY_BIN && $MY_BIN
     """
 
-    exgraph.execute(yaml)
+    exgraph.execute(config)
